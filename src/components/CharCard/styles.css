@@ -1,0 +1,147 @@
+.greenBox {
+  background-color: #bcea47;
+}
+
+.grayBox {
+  background-color: rgb(192, 191, 191);
+}
+
+.greenBox,
+.redBox,
+.grayBox {
+  height: 250px;
+  width: 200px;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 8px;
+  text-overflow: ellipsis;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.greenBox h1,
+.redBox h1,
+.grayBox h1 {
+  height: 25px;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-shadow: -1px -1px 0px #000, -1px 1px 0px #000, 1px -1px 0px #000,
+    1px 0px 0px #000;
+  margin: 0;
+}
+
+h2 {
+  text-shadow: -1px -1px 0px #000, -1px 1px 0px #000, 1px -1px 0px #000,
+    1px 0px 0px #000;
+  font-size: 20px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 40px;
+  margin: 0;
+  text-shadow: -3px -3px 3px #000, -2px 2px 1px #000, 2px -2px 1px #000,
+    2px 2px 0px #000;
+}
+
+.greenBox img,
+.redBox img,
+.grayBox img {
+  width: 50%;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.redBox {
+  background-color: #c2004b;
+}
+
+.title {
+  width: 200px;
+  margin: 0 0 20px 0;
+}
+
+.cardsParent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.tranksFront {
+  background-color: #1c6887;
+  width: 100px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  margin: 0 1px 0 1px;
+  font-weight: 600;
+}
+
+.tranksFront:hover {
+  background-color: white;
+  color: #1c6887;
+}
+
+.tranksBack:hover {
+  background-color: white;
+  color: #1c6887;
+}
+
+.nopeFront {
+  background-color: rgb(112, 112, 112);
+  width: 100px;
+  height: 40px;
+  color: white;
+  border: none;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  margin: 0 1px 0 1px;
+  font-weight: 600;
+}
+
+.tranksBack {
+  background-color: #1c6887;
+  width: 100px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  margin: 0 1px 0 1px;
+  font-weight: 600;
+}
+
+.nopeBack {
+  background-color: rgb(112, 112, 112);
+  width: 100px;
+  height: 40px;
+  color: white;
+  border: none;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  margin: 0 1px 0 1px;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  .title {
+    width: 300px;
+  }
+}
