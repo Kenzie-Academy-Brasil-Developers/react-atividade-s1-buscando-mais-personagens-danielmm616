@@ -9,7 +9,10 @@ function App() {
   useEffect(() => {
     fetch(`https://rickandmortyapi.com/api/character/?page=${next}`)
       .then((response) => response.json())
-      .then((response) => setCharacterList(response.results))
+      .then((response) => {
+        setCharacterList(response.results);
+        console.log(response);
+      })
       .catch((err) => console.log(err));
   }, [next]);
 
@@ -20,13 +23,11 @@ function App() {
   };
 
   const nextPage = () => {
-    if (characterList[19] === undefined) {
+    if (next >= 34) {
       return;
     }
     setNext(next + 1);
   };
-
-  console.log(useEffect.length);
 
   return (
     <div className="App">
